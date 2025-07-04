@@ -1,6 +1,12 @@
+import sys
+
 def main():
     print('Enter number:')
-    answer = int(input())
+    try:
+        answer = int(input())
+    except ValueError:
+        print("You must enter an integer.")
+        sys.exit()
 
     while answer != 1:
         answer = collatz(answer)
