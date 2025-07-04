@@ -1,3 +1,9 @@
+# collatz.py
+# Date: Saturday 5th July 2025
+# Author: Brendan Gasparin <brendan.gasparin@gmail.com>
+# Prompts user for a positive integer and runs it through the Collatz sequence.
+
+
 import sys
 
 def main():
