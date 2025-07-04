@@ -1,12 +1,16 @@
 import sys
 
 def main():
-    print('Enter number:')
-    try:
-        answer = int(input())
-    except ValueError:
-        print("You must enter an integer.")
-        sys.exit()
+    answer = 'Alphabetical'
+    while not str(answer).isnumeric():
+        print('Enter an integer greater than zero:')
+        try:
+            answer = int(input())
+        except ValueError:
+            print("You must enter an integer greater than zero.")
+        else:
+            if (answer <= 0):
+                answer = 'Negative'
 
     while answer != 1:
         answer = collatz(answer)
